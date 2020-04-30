@@ -4,7 +4,9 @@
   "description": "A library for handling signals and events in Das Keyboard Q Cloud",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -27,9 +29,11 @@
     "node-localstorage": "^1.3.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
-    "winston": "^3.1.0"
+    "winston": "^3.1.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "mocha": "^5.2.0"
-  }
+  },
+  "snyk": true
 }
